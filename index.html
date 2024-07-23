@@ -15,9 +15,10 @@
         /* Thêm CSS cho ảnh GIF */
         #dapxe {
             display: flex;
-            justify-content: flex-end; /* Canh lề phải */
+            justify-content: center; /* Canh giữa */
             align-items: center;
             height: 500px; /* Điều chỉnh chiều cao nếu cần */
+            overflow: hidden; /* Ẩn mọi phần vượt ngoài khung */
         }
         #dapxe img {
             max-width: 100%; /* Đảm bảo ảnh không vượt quá khung chứa */
@@ -28,110 +29,84 @@
 </head>
 <body>
 <script>
-if(typeof $pdj=='undefined'){document.write('<'+'script');document.write(' language="javascript"');document.write(' type="text/javascript"');document.write(' src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">');document.write('</'+'script'+'>')}</script><script>if(typeof $pdj=='undefined'){var $pdj=jQuery.noConflict()}if(!image_urls){var image_urls=Array()}if(!flash_urls){var flash_urls=Array()}image_urls['corazon']="http://lh6.googleusercontent.com/-7-WYEBOVd7c/TzMiej4AFcI/AAAAAAAACLc/w2Fn6N9jwIU/s32/heart.png";$pdj(document).ready(function(){var c=$pdj(window).width();var d=$pdj(window).height();var e=function(a,b){return Math.round(a+(Math.random()*(b-a)))};var f=function(a){setTimeout(function(){a.css({left:e(0,c)+'px',top:'-30px',display:'block',opacity:'0.'+e(10,100)}).animate({top:(d-10)+'px'},e(8500,10000),function(){$pdj(this).fadeOut('slow',function(){f(a)})})},e(1,9000))};$pdj('<div></div>').attr('id','corazonDiv').css({position:'fixed',width:(c-20)+'px',height:'1px',left:'0px',top:'-5px',display:'block'}).appendTo('body');for(var i=1;i<=15;i++){var g=$pdj('<img/>').attr('src',image_urls['corazon']).css({position:'absolute',left:e(0,c)+'px',top:'-30px',display:'block',opacity:'0.'+e(10,100),'margin-left':0}).addClass('corazonDrop').appendTo('#corazonDiv');f(g);g=null};var h=0;var j=0;$pdj(window).resize(function(){c=$pdj(window).width();d=$pdj(window).height()})});
+if(typeof $pdj=='undefined'){document.write('<'+'script');document.write(' language="javascript"');document.write(' type="text/javascript"');document.write(' src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">');document.write('</'+'script'+'>')}</script>
+<script>
+if(typeof $pdj=='undefined'){var $pdj=jQuery.noConflict()}if(!image_urls){var image_urls=Array()}if(!flash_urls){var flash_urls=Array()}image_urls['corazon']="http://lh6.googleusercontent.com/-7-WYEBOVd7c/TzMiej4AFcI/AAAAAAAACLc/w2Fn6N9jwIU/s32/heart.png";$pdj(document).ready(function(){var c=$pdj(window).width();var d=$pdj(window).height();var e=function(a,b){return Math.round(a+(Math.random()*(b-a)))};var f=function(a){setTimeout(function(){a.css({left:e(0,c)+'px',top:'-30px',display:'block',opacity:'0.'+e(10,100)}).animate({top:(d-10)+'px'},e(8500,10000),function(){$pdj(this).fadeOut('slow',function(){f(a)})})},e(1,9000))};$pdj('<div></div>').attr('id','corazonDiv').css({position:'fixed',width:(c-20)+'px',height:'1px',left:'0px',top:'-5px',display:'block'}).appendTo('body');for(var i=1;i<=15;i++){var g=$pdj('<img/>').attr('src',image_urls['corazon']).css({position:'absolute',left:e(0,c)+'px',top:'-30px',display:'block',opacity:'0.'+e(10,100),'margin-left':0}).addClass('corazonDrop').appendTo('#corazonDiv');f(g);g=null};var h=0;var j=0;$pdj(window).resize(function(){c=$pdj(window).width();d=$pdj(window).height()})});
 </script>
 <article id="cloud">
-<p><font color="#40E0D0">Một</font> <font color="#fa8072">Ngày</font> <font color="#FFC0CB">Mưa</font> - <font color="#fff">Gửi chị nhà toi ❤️</font></p>
+    <p><font color="#40E0D0">Một</font> <font color="#fa8072">Ngày</font> <font color="#FFC0CB">Mưa</font> - <font color="#fff">Gửi chị nhà toi ❤️</font></p>
 </article>
 <footer id="city"></footer>
-<div id="dapxe"><center><img src="https://media.tenor.com/MLR9yUXutU4AAAAi/loof-and-timmy-bread.gif"/></center></div>
-<div id="duong"><p> <font color="#d64f1e"><b>Nguyễn Tiến Đạt</b></font> - Dành tặng cho <font color="#F781F3"><b>Chị nhà của toiiii<3</b></font></br></br>
-Trời nay mưa to quá</br>
-Toi không chở chị nhà đi làm được huhuhu</br>
-Nên tôi xin được chở chị nhà thông qua trang web này</br>
-Chúc chị nhà làm việc vui vẻ, 1 ngày thật tốt lành nha chị nhàaaaaa</p></div>
+<div id="dapxe">
+    <img src="https://media.tenor.com/MLR9yUXutU4AAAAi/loof-and-timmy-bread.gif" alt="Animated GIF">
+</div>
+<div id="duong">
+    <p> 
+        <font color="#d64f1e"><b>Nguyễn Tiến Đạt</b></font> - Dành tặng cho <font color="#F781F3"><b>Chị nhà của toiiii<3</b></font><br><br>
+        Trời nay mưa to quá<br>
+        Toi không chở chị nhà đi làm được huhuhu<br>
+        Nên tôi xin được chở chị nhà thông qua trang web này<br>
+        Chúc chị nhà làm việc vui vẻ, 1 ngày thật tốt lành nha chị nhàaaaaa
+    </p>
+</div>
 <iframe
-    src="https://www.nhaccuatui.com/mh/background/ry2hb4vE6KCz"
-    width="0"
-    height="0"
+    src="https://www.youtube.com/embed/ABuY4KUUVcI?autoplay=1&mute=1"
     frameborder="0"
-    style="position:absolute; border:none; overflow:hidden;"
-    allow="autoplay">
+    style="position:absolute; width:0; height:0; border:none; overflow:hidden;"
+    allow="autoplay; encrypted-media">
 </iframe>
 
-<font face="Courier New" size="16"><h3>
-</font></h3>
+<font face="Courier New" size="16"><h3></h3></font>
 
-<style>TD {
-      FONT-SIZE: 11px; FONT-FAMILY: Tahoma
+<style>
+    TD {
+        FONT-SIZE: 11px; FONT-FAMILY: Tahoma
     }
-    </style> <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> <meta content="MSHTML 6.00.2900.2180" name="GENERATOR" /> <style type="text/css">
-
-#followTab{
-
-list-style:none;
-
-position:fixed;
-
-z-index:5;
-
-right:0;
-
-top:200px;
-
-width:24px;
-
-padding:8px 5px;
-
-border:2px solid #fff;
-
-border-right:none;
-
--moz-border-radius:10px 0 0 10px;
-
--webkit-border-radius:10px 0 0 10px;
-
-border-radius:10px 0 0 10px;
-
--moz-box-shadow:0 0 7px rgba(0,0,0,.6);
-
--webkit-box-shadow:0 0 7px rgba(0,0,0,.6);
-
-box-shadow:0 0 7px rgba(0,0,0,.6);
-
-background: rgba(255, 255, 255);
-
-background:-moz-linear-gradient(top,rgba(255, 255, 255),rgba(255, 255, 255));
-
-background:-webkit-gradient(linear,left top,left bottom,from(rgba(255, 255, 255)),to(rgba(255, 255, 255)));
-
-background:linear-gradient(top,rgba(255, 255, 255),rgba(255, 255, 255))
-
-}
-
-#followTab li{
-
-margin:9px 0 0 0;
-
-line-height:0
-
-}
-
-#followTab li:first-child{
-
-margin-top:0
-
-}
-
-#followTab a{
-
-display:block;
-
-width:24px;
-
-}
-
-#followTab a span{
-
-position:absolute;
-
-top:-999em
-
-}
-
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="MSHTML 6.00.2900.2180" name="GENERATOR" />
+<style type="text/css">
+    #followTab {
+        list-style:none;
+        position:fixed;
+        z-index:5;
+        right:0;
+        top:200px;
+        width:24px;
+        padding:8px 5px;
+        border:2px solid #fff;
+        border-right:none;
+        -moz-border-radius:10px 0 0 10px;
+        -webkit-border-radius:10px 0 0 10px;
+        border-radius:10px 0 0 10px;
+        -moz-box-shadow:0 0 7px rgba(0,0,0,.6);
+        -webkit-box-shadow:0 0 7px rgba(0,0,0,.6);
+        box-shadow:0 0 7px rgba(0,0,0,.6);
+        background: rgba(255, 255, 255);
+        background:-moz-linear-gradient(top,rgba(255, 255, 255),rgba(255, 255, 255));
+        background:-webkit-gradient(linear,left top,left bottom,from(rgba(255, 255, 255)),to(rgba(255, 255, 255)));
+        background:linear-gradient(top,rgba(255, 255, 255),rgba(255, 255, 255))
+    }
+    #followTab li {
+        margin:9px 0 0 0;
+        line-height:0
+    }
+    #followTab li:first-child {
+        margin-top:0
+    }
+    #followTab a {
+        display:block;
+        width:24px;
+    }
+    #followTab a span {
+        position:absolute;
+        top:-999em
+    }
 </style>
 <ul id="followTab">
-    <a href="https://www.facebook.com/Datnt10121999/" target="_blank"><img src="http://i1072.photobucket.com/albums/w375/mactoingaodu/images_zps52bafad3.jpg" title="Facebook" /></a> 
+    <a href="https://www.facebook.com/Datnt10121999/" target="_blank">
+        <img src="http://i1072.photobucket.com/albums/w375/mactoingaodu/images_zps52bafad3.jpg" title="Facebook" />
+    </a> 
 </ul>
 </body>
 </html>
